@@ -109,15 +109,15 @@ Comprobaciones realizadas durante el desarrollo: menú móvil y acordeón operab
 
 ### Fase 6. Publicación y descarga 🔄
 
-El equipo eligió GitHub Pages con su dominio gratuito e informó que el APK está alojado en la cuenta Expo de un compañero. La URL y las condiciones de acceso aún deben confirmarse.
+El equipo eligió GitHub Pages y confirmó que el APK alojado en Expo está autorizado para su publicación. Expo lo identifica como compilación de distribución interna.
 
-- [ ] Confirmar una URL HTTPS accesible y confiable del APK alojado en Expo, fuera del repositorio de la landing.
-- [ ] Completar `src/config/download.ts` (URL, versión, tamaño, requisitos y fecha) solo con datos confirmados.
-- [ ] Probar descarga e instalación en un dispositivo Android real.
+- [x] Configurar una URL HTTPS accesible del APK alojado en Expo, fuera del repositorio de la landing.
+- [ ] Completar en `src/config/download.ts` la versión, el tamaño, los requisitos y la fecha cuando estén confirmados.
+- [x] Probar descarga e instalación en un dispositivo Android real: el equipo informó que esta versión se instaló y funciona.
 - [ ] Publicar instrucciones de instalación verificadas y actualizar la FAQ.
 - [ ] Agregar privacidad, términos y contacto solo cuando existan documentos y canales confirmados.
 - [x] Elegir GitHub Pages y preparar rutas y flujo de publicación.
-- [ ] Crear el repositorio, activar GitHub Pages y desplegar `dist/`; comprobar el sitio publicado y HTTPS.
+- [x] Crear el repositorio, activar GitHub Pages y desplegar `dist/`; comprobar el sitio publicado y HTTPS.
 - [ ] Configurar URL canónica, `og:url` e imagen Open Graph con el dominio definitivo.
 - [ ] Analítica de clics de descarga, solo con herramienta configurada y política de privacidad aplicable.
 

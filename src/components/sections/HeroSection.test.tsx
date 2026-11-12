@@ -26,6 +26,7 @@ vi.mock('framer-motion', () => ({
 }));
 
 import { HeroSection } from './HeroSection';
+import { downloadConfig } from '../../config/download';
 
 afterEach(() => {
   cleanup();
@@ -34,7 +35,7 @@ afterEach(() => {
 });
 
 describe('HeroSection', () => {
-  it('presenta el contenido, la descarga pendiente y el enlace de navegación', () => {
+  it('presenta el contenido, la descarga y el enlace de navegación', () => {
     render(<HeroSection />);
 
     expect(screen.getByRole('heading', { level: 1 }).textContent).toBe(
@@ -42,8 +43,8 @@ describe('HeroSection', () => {
     );
     expect(screen.getByText('Tu ciudad. Tu impacto.')).toBeTruthy();
     expect(screen.getByText(/reportá problemas ambientales/i)).toBeTruthy();
-    expect(screen.getByText(/disponible próximamente/i)).toBeTruthy();
-    expect(screen.queryByRole('link', { name: /descargar apk/i })).toBeNull();
+    expect(screen.getByRole('link', { name: /descargar apk/i }).getAttribute('href'))
+      .toBe(downloadConfig.url);
     expect(screen.getByRole('link', { name: 'Ver cómo funciona' }).getAttribute('href'))
       .toBe('#como-funciona');
     expect(screen.getByAltText(/pantalla de inicio de ecoalerta/i).getAttribute('loading'))

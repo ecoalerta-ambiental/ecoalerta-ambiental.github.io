@@ -30,9 +30,9 @@ const availableDownload: DownloadConfig = {
 
 describe('DownloadButton', () => {
   it('muestra la disponibilidad pendiente sin enlace cuando falta la URL', () => {
-    render(<DownloadButton />);
+    render(<DownloadButton config={{ ...availableDownload, url: null }} />);
 
-    expect(screen.getByText(/disponible próximamente/i)).toBeTruthy();
+    expect(screen.getByText('Descarga pendiente')).toBeTruthy();
     expect(screen.queryByRole('link')).toBeNull();
   });
 

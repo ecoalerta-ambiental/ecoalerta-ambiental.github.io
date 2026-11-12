@@ -26,6 +26,7 @@ vi.mock('framer-motion', () => ({
 
 import { EcoStoreSection } from './EcoStoreSection';
 import { ImpactSection } from './ImpactSection';
+import { downloadConfig } from '../../config/download';
 
 afterEach(() => {
   cleanup();
@@ -63,8 +64,8 @@ describe('EcoStoreSection', () => {
     }
     expect(screen.getByText(/canje de puntos por productos con retiro presencial/i)).toBeTruthy();
     expect(screen.getByText('La disponibilidad y las condiciones se consultan en la app.')).toBeTruthy();
-    expect(screen.getByText(/disponible próximamente/i)).toBeTruthy();
-    expect(screen.queryByRole('link', { name: /descargar/i })).toBeNull();
+    expect(screen.getByRole('link', { name: /descargar/i }).getAttribute('href'))
+      .toBe(downloadConfig.url);
   });
 
   it('muestra el coste confirmado, incluso si es cero, y la imagen sin etiqueta de ejemplo', () => {

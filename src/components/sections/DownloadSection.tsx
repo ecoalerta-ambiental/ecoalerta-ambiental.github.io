@@ -20,7 +20,7 @@ export function DownloadSection() {
               Empezá a participar con EcoAlerta.
             </h2>
             <p className="mt-4 max-w-2xl leading-relaxed text-content-secondary">
-              La aplicación para Android se distribuye mediante un archivo APK cuando esté disponible.
+              La aplicación para Android se distribuye mediante un archivo APK.
             </p>
             <div className="mt-8">
               <DownloadButton label="Descargar APK para Android" location="descarga" />

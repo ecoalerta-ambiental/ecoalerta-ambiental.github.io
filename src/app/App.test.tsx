@@ -2,6 +2,7 @@ import { cleanup, render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterAll, afterEach, beforeAll, describe, expect, it, vi } from 'vitest';
 import App from './App';
+import { downloadConfig } from '../config/download';
 
 afterEach(cleanup);
 
@@ -42,7 +43,11 @@ describe('App', () => {
       expect(logo.querySelector('img')?.getAttribute('src')).toBe('/images/logo-ecoalerta-128.png');
       expect(logo.querySelector('img')?.getAttribute('alt')).toBe('');
     }
-    expect(screen.queryAllByRole('link', { name: /descargar apk/i })).toHaveLength(0);
+    const downloads = screen.getAllByRole('link', { name: /descargar/i });
+    expect(downloads).toHaveLength(4);
+    for (const link of downloads) {
+      expect(link.getAttribute('href')).toBe(downloadConfig.url);
+    }
     expect(screen.queryByText(/versión de la app:/i)).toBeNull();
   });
 

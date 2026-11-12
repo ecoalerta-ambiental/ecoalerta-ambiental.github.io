@@ -8,7 +8,7 @@ export interface DownloadConfig {
 }
 
 export const downloadConfig = {
-  url: null,
+  url: 'https://expo.dev/artifacts/eas/quNI4KEVwx3RwkrVa1lO9D4dfVjMervfXmOXndAD7fg.apk',
   version: null,
   size: null,
   requirements: null,
