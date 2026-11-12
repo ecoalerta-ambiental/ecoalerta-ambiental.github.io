@@ -67,6 +67,10 @@ describe('contenido de la aplicación', () => {
     expect(screen.getByText(/quien lo creó puede consultarlo, pero no modificarlo una vez enviado/i)).toBeTruthy();
     expect(screen.getByText(/administrador revisa la foto/i)).toBeTruthy();
     expect(screen.getByText(/reportes se conservan indefinidamente/i)).toBeTruthy();
-    expect(screen.getByText(/instrucciones de instalación se publicarán/i)).toBeTruthy();
+    const instructions = screen.getByText(/desde tu teléfono Android, descargá el APK/i);
+    expect(instructions.textContent).toMatch(/carpeta Descargas/i);
+    expect(instructions.textContent).toMatch(/permiso para instalar aplicaciones desde esa fuente/i);
+    expect(instructions.textContent).toMatch(/podés desactivar ese permiso después/i);
+    expect(instructions.textContent).toMatch(/no desactives las protecciones de seguridad/i);
   });
 });

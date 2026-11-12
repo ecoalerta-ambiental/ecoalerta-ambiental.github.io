@@ -114,7 +114,8 @@ El equipo eligió GitHub Pages y confirmó que el APK alojado en Expo está auto
 - [x] Configurar una URL HTTPS accesible del APK alojado en Expo, fuera del repositorio de la landing.
 - [ ] Completar en `src/config/download.ts` la versión, el tamaño, los requisitos y la fecha cuando estén confirmados.
 - [x] Probar descarga e instalación en un dispositivo Android real: el equipo informó que esta versión se instaló y funciona.
-- [ ] Publicar instrucciones de instalación verificadas y actualizar la FAQ.
+- [x] Añadir a la FAQ indicaciones generales para descargar e instalar el APK con precauciones de seguridad.
+- [ ] Verificar el recorrido de esas instrucciones en dispositivos Android; los pasos pueden variar según el equipo.
 - [ ] Agregar privacidad, términos y contacto solo cuando existan documentos y canales confirmados.
 - [x] Elegir GitHub Pages y preparar rutas y flujo de publicación.
 - [x] Crear el repositorio, activar GitHub Pages y desplegar `dist/`; comprobar el sitio publicado y HTTPS.

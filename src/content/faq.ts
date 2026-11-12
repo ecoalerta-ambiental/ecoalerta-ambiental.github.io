@@ -14,7 +14,7 @@ export const faq: readonly Faq[] = [
   {
     id: 'instalacion',
     question: '¿Cómo instalo el APK?',
-    answer: 'Las instrucciones de instalación se publicarán cuando estén disponibles y verificadas.',
+    answer: 'Desde tu teléfono Android, descargá el APK con el botón de esta página. Abrí el archivo descargado desde la notificación o la carpeta Descargas. Si Android solicita permiso para instalar aplicaciones desde esa fuente, habilitalo solo para el navegador o gestor de archivos que uses y volvé al archivo. Tocá Instalar y, al finalizar, abrí EcoAlerta. Podés desactivar ese permiso después. Los pasos pueden variar según el dispositivo y la versión de Android. Descargá el APK únicamente desde fuentes confiables y no desactives las protecciones de seguridad del dispositivo.',
   },
   {
     id: 'datos',
