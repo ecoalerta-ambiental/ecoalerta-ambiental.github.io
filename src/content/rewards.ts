@@ -1,0 +1,81 @@
+import type { Reward } from '../types/content';
+
+export const rewards: readonly Reward[] = [
+  {
+    id: 'lavandina',
+    name: 'Lavandina',
+    imageUrl: `${import.meta.env.BASE_URL}images/rewards/lavandina.jpg`,
+    costPoints: 280,
+    isIllustrative: true,
+  },
+  {
+    id: 'esponja-vegetal',
+    name: 'Esponja vegetal',
+    imageUrl: `${import.meta.env.BASE_URL}images/rewards/esponja-vegetal.webp`,
+    costPoints: 250,
+    isIllustrative: true,
+  },
+  {
+    id: 'lampara-led',
+    name: 'Lámpara LED de bajo consumo',
+    imageUrl: `${import.meta.env.BASE_URL}images/rewards/lampara-led.webp`,
+    costPoints: 300,
+    isIllustrative: true,
+  },
+  {
+    id: 'semillas-huerta',
+    name: 'Semillas para huerta',
+    imageUrl: `${import.meta.env.BASE_URL}images/rewards/semillas-huerta.jpeg`,
+    costPoints: 150,
+    isIllustrative: true,
+  },
+  {
+    id: 'kit-cuidado-personal',
+    name: 'Kit de cuidado personal sólido',
+    imageUrl: `${import.meta.env.BASE_URL}images/rewards/kit-cuidado-personal.webp`,
+    costPoints: 750,
+    isIllustrative: true,
+  },
+  {
+    id: 'kit-cubiertos',
+    name: 'Kit de cubiertos',
+    imageUrl: `${import.meta.env.BASE_URL}images/rewards/kit-cubiertos.jpg`,
+    costPoints: 850,
+    isIllustrative: true,
+  },
+  {
+    id: 'cepillo-bambu',
+    name: 'Cepillo de bambú',
+    imageUrl: `${import.meta.env.BASE_URL}images/rewards/cepillo-bambu.webp`,
+    costPoints: 100,
+    isIllustrative: true,
+  },
+  {
+    id: 'botella-termica',
+    name: 'Botella térmica',
+    imageUrl: `${import.meta.env.BASE_URL}images/rewards/botella-termica.jpg`,
+    costPoints: 1000,
+    isIllustrative: true,
+  },
+  {
+    id: 'compostera-domiciliaria',
+    name: 'Compostera domiciliaria 20 L',
+    imageUrl: `${import.meta.env.BASE_URL}images/rewards/compostera-domiciliaria.webp`,
+    costPoints: 700,
+    isIllustrative: true,
+  },
+  {
+    id: 'gorra-ecoalerta',
+    name: 'Gorra oficial EcoAlerta',
+    imageUrl: `${import.meta.env.BASE_URL}images/rewards/gorra-ecoalerta.jpg`,
+    costPoints: 500,
+    isIllustrative: true,
+  },
+  {
+    id: 'bolsa-tela',
+    name: 'Bolsa de tela reutilizable',
+    imageUrl: `${import.meta.env.BASE_URL}images/rewards/bolsa-tela.jpg`,
+    costPoints: 300,
+    isIllustrative: true,
+  },
+];

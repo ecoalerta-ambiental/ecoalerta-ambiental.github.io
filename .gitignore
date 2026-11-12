@@ -1,0 +1,23 @@
+node_modules/
+dist/
+coverage/
+
+# Credenciales y configuración local
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Archivos locales y generados
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Documentación interna de la aplicación móvil
+ESPECIFICACION_TECNICA_APP_ECOALERTA.md
+especificaciones_eco_alerta.md
